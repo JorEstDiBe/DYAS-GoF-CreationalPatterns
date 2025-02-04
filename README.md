@@ -18,7 +18,7 @@ Para lograr esto, se sabe que es necesario desacoplar toda la lógica del juego 
 ### Actividades.
 
 3.  Plantee en un diagrama de clases la solución aplicando el patrón fábrica abstracta.
-	![Diagrama del proyecto](img/)
+	![Diagrama del proyecto](img/Diagrama1)
    
 5. Plantee un modelo de clases con la propuesta de cómo implementar el patrón.
 
