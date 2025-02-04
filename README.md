@@ -18,39 +18,23 @@ Para lograr esto, se sabe que es necesario desacoplar toda la lógica del juego 
 ### Actividades.
 
 3.  Plantee en un diagrama de clases la solución aplicando el patrón fábrica abstracta.
-	![Diagrama del proyecto](img/Diagrama1)
+	![Diagrama de Clases](img/Diagrama1.jpg)
    
 5. Plantee un modelo de clases con la propuesta de cómo implementar el patrón.
+   	![Modelo de Clases](img/Diagrama2.jpg)
 
-6. Basado en el modelo planteado, implemente el conjunto de productos concretos (y su fábrica concreta correspondiente), necesarios para soportar un jugador, balas y fondo de pantalla basados en vectores (para esto, revise en el API de Java, cómo con la clase Graphics se pueden hacer construcciones geométricas básicas como líneas, óvalos, etc).
+7. Basado en el modelo planteado, implemente el conjunto de productos concretos (y su fábrica concreta correspondiente), necesarios para soportar un jugador, balas y fondo de pantalla basados en vectores (para esto, revise en el API de Java, cómo con la clase Graphics se pueden hacer construcciones geométricas básicas como líneas, óvalos, etc).
 Una vez hecho lo anterior, valide que se da el desacoplamiento: en ninguna parte del código original se deben mencionar las clases asociadas a algún esquema de visualización concreta (sprites/vectores).
 
-7. Cree un nuevo estilo visual llamado ‘colorful-vectorial-style‘, similar al ‘vectorial-style‘, pero usando colores en lugar de sólo blanco y negro.
-8. Valide que para incorporar y habilitar este nuevo estilo sólo haya sido necesario:
+8. Cree un nuevo estilo visual llamado ‘colorful-vectorial-style‘, similar al ‘vectorial-style‘, pero usando colores en lugar de sólo blanco y negro.
+9. Valide que para incorporar y habilitar este nuevo estilo sólo haya sido necesario:
 
 	* Crear nuevos productos concretos correspondientes a dicho esquema.
 	* Crear su correspondiente fábrica concreta.
 	* Cambiar la configuración de la fábrica abstracta.
 
 
-#### Criterios de evaluación
 
-1. Parte I.
-	* Funcional. 
-		1. El preparador de pizzas cambia su comportamiento al cambiar la configuración de la fábrica abstracta.
-
-2. Parte II.
-
-	* Diseño.
-
-		1. En la vista del juego no deben existir ninguna referencia a *Player*, *Bullet* o *Renderer* concretos.
-		2. Entre las Las implementaciones concretas de cada abstracción no se debe tener código duplicado (DRY).
-	* Implementación.
-
-		1. Las vistas 'vectoriales' están implementadas usando primitivas gráficas geométricas (g.drawLine()/drawOval()/etc).
-	* Funcionalidad.
-
-		1. Sólo con cambiar la configuración de la fábrica abstracta, debe cambiar el estilo del juego.
 
 
 
