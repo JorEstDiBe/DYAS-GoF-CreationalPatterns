@@ -27,7 +27,9 @@ Para lograr esto, se sabe que es necesario desacoplar toda la lógica del juego 
 Una vez hecho lo anterior, valide que se da el desacoplamiento: en ninguna parte del código original se deben mencionar las clases asociadas a algún esquema de visualización concreta (sprites/vectores).
 
 8. Cree un nuevo estilo visual llamado ‘colorful-vectorial-style‘, similar al ‘vectorial-style‘, pero usando colores en lugar de sólo blanco y negro.
-9. Valide que para incorporar y habilitar este nuevo estilo sólo haya sido necesario:
+
+   --Nota: para cambiar entre estilos de juego se debe oprimir la tecla "F".
+10. Valide que para incorporar y habilitar este nuevo estilo sólo haya sido necesario:
 
 	* Crear nuevos productos concretos correspondientes a dicho esquema.
 	* Crear su correspondiente fábrica concreta.
