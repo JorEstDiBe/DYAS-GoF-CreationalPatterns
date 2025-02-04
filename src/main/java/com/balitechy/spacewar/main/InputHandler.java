@@ -22,3 +22,4 @@ public class InputHandler extends KeyAdapter{
 	}
 
 }
+
